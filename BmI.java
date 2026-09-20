@@ -11,8 +11,20 @@ public class BmI {
         System.out.print("Enter height: ");
         double height = sc.nextDouble();
 
+        BodyMassIndex bmi = new BodyMassIndex();
+        bmi.BodyMassIndex(weight, height);
+
+        
+    }
+}
+
+class BodyMassIndex{
+    public void BodyMassIndex(double weight,double height){
+
         double bmi = weight / (height * height);
 
         System.out.println("BMI = " + bmi);
+        
+        
     }
 }
